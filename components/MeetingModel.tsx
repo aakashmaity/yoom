@@ -6,6 +6,7 @@ import {
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 import { Button } from './ui/button'
+import { DialogTitle } from '@radix-ui/react-dialog'
 
 
 interface MeetingModelProps {
@@ -30,7 +31,7 @@ const MeetingModel = ({ isOpen, onClose, title, className, handleClick, buttonTe
                             <Image src={image} alt={image} width={71} height={72}/>
                         </div>
                     )}
-                    <h1 className={cn('text-3xl font-bold leading-[42px]',className)}>{title}</h1>
+                    <h1 className={cn('text-3xl font-bold leading[42px]',className)}>{title}</h1>
                     {children}
                     <Button className='bg-blue-1 focus-visible:ring-0 focus-visible: ring-offset-0'
                         onClick={handleClick}
