@@ -16,7 +16,7 @@ const Home = () => {
   const nextMeeting = (upcomingCalls[0] as Call)?.state?.startsAt;
 
   const upcomingTime = nextMeeting?.toLocaleTimeString('en-US',{hour: '2-digit', minute: '2-digit'}) || ''
-  const upcomingDate = (new Intl.DateTimeFormat('en-US',{dateStyle: 'medium'})).format(nextMeeting)
+  const upcomingDate = (new Intl.DateTimeFormat('en-US',{dateStyle: 'medium'})).format(nextMeeting) || ''
 
   if(isLoading){
     return <Loader/>
