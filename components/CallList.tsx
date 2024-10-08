@@ -73,7 +73,7 @@ const CallList = ({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) => {
     const calls = getCalls();
     const noCallsMessage = getNoCallsMessage();
 
-
+    
 
     return (
         <div className='grid grid-cols-1 gap-5 xl:grid-cols-2'>
@@ -87,7 +87,7 @@ const CallList = ({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) => {
                             'Personal Meeting'
                     }
                     date={  (meeting as Call).state?.startsAt?.toLocaleString() || 
-                            (meeting as CallRecording).start_time?.toLocaleString()
+                            (meeting as CallRecording).start_time?.toLocaleString() 
                     }
                     icon={
                         type === 'ended'
