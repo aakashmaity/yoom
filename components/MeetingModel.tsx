@@ -6,7 +6,6 @@ import {
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 import { Button } from './ui/button'
-import { DialogTitle } from '@radix-ui/react-dialog'
 
 
 interface MeetingModelProps {

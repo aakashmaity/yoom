@@ -64,13 +64,6 @@ const MeetingTypeList = () => {
             if(!values.description){
                 router.push(`/meeting/${call.id}`);
             }
-            
-            // console.log("call::",call);
-            // console.log("values::",values);
-            // console.log("user::",user);
-            // console.log("meetingState::",meetingState);
-
-
             toast({ title: "Meeting created"})
 
         } catch (err) {
